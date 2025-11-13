@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO App - RESTful API</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📝 TO-DO App</h1>
+            <p>RESTful API with PHP & JavaScript</p>
+        </header>
+
+        <!-- Add Task Form -->
+        <section class="add-task-section">
+            <h2>Add New Task</h2>
+            <form id="taskForm">
+                <div class="form-group">
+                    <label for="title">Title:</label>
+                    <input type="text" id="title" name="title" required>
+                </div>
+                <div class="form-group">
+                    <label for="description">Description:</label>
+                    <textarea id="description" name="description" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="completed" name="completed">
+                        Completed
+                    </label>
+                </div>
+                <button type="submit" id="addBtn">Add Task</button>
+                <button type="button" id="cancelBtn" style="display: none;">Cancel</button>
+            </form>
+        </section>
+
+        <!-- Tasks List -->
+        <section class="tasks-section">
+            <h2>Tasks List</h2>
+            <div id="loading" class="loading">Loading tasks...</div>
+            <div id="tasksList" class="tasks-list"></div>
+            <div id="noTasks" class="no-tasks" style="display: none;">
+                <p>No tasks found. Add your first task above!</p>
+            </div>
+        </section>
+
+        <!-- Status Messages -->
+        <div id="statusMessage" class="status-message"></div>
+    </div>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
+
+
