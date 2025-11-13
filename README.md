@@ -238,7 +238,9 @@ fetch('api/items.php', {
 This project is for educational purposes. Feel free to use and modify as needed.
 
 ## Author
+#princeMukwasa.    
 
 Created as a demonstration of RESTful API development with PHP and JavaScript.
+
 
 
